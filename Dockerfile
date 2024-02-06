@@ -1,2 +1,5 @@
 FROM ubuntu
-ADD 
+ADD
+COPY
+ENV
+
