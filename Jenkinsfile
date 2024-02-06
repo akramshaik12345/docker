@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('docker') {
             steps {
-              docker.build("dockerimage:Docker")
+              docker.build("dockerimage:D:\Docker")
             }
         }
         
