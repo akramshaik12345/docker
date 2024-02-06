@@ -6,6 +6,13 @@ pipeline {
               docker.build("dockerimage:D:\Docker")
             }
         }
+        stage ('notify') {
+            steps {
+                echo "build sucess"
+
+            }
+          
+        }
         
     }
 }
