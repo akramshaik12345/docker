@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage ('copy from one file to another') {
+        stage ('codechecout') {
             steps {
-                 bat 'xcopy "D:\\New folder (2)\\spring-petclinic" "D:\\Docker" '
+                git 'https://github.com/akramshaik12345/docker.git'
+            }
+        }
+        stage ( 'copy') {
+            steps {
+                echo 'print'
+
             }
         }
     }
