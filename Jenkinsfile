@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('docker') {
             steps {
-              docker.build("dockerimage:D:\Docker")
+              docker.build("dockerimage:D:\Docker\image\Dockerfile")
             }
         }
         stage ('notify') {
