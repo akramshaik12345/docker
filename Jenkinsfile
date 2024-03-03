@@ -6,5 +6,10 @@ pipeline {
             git "https://github.com/akramshaik12345/docker.git"
             }
         }
+        stage ("build") {
+            steps {
+                bat 'mvn compile'
+            }
+        }
     }
 }
