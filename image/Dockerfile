@@ -1,5 +1,0 @@
-FROM ubuntu
-ADD
-COPY
-ENV
-
